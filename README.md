@@ -1,6 +1,6 @@
 # kottans_frontend
 
-##Task 0
+## Task 0
 
 * The course about Git was very interesting. I learnt and got some practise with `git pull request` and how navigate branches.
 
