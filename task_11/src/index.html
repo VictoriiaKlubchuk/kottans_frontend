@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kottans_FORM</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/4a582f4e95.js"></script>
+</head>
+<body>
+
+<main>
+	<section class="header">
+		<div class="order">
+			<div class="order__wrapper">
+				<h2 class="order__title">Your order</h2>
+				<table class="order__details">
+					<tr>
+						<th>Items</th>
+						<th>Details</th>
+						<th>Price</th>
+						<th>Delivery</th>
+					</tr>
+					<tr>
+						<td>2 documents</td>
+						<td>2 languages</td>
+						<td value='USD:696.06'>$ 696.06</td>
+						<td>48 hours*</td>
+					</tr>
+				</table>
+			</div>
+			<div class="order__buttons">
+				<input class="button button-submit" type="submit" value="Place order">
+				<input class="button button-print" type="button" value="Print a quote">
+			</div>
+		</div>
+		<div class="help-info">
+			<h2 class="help-info__title">Help center</h2>
+			<p class="help-info__text">If you need assistance while placing your order, contact one of beloved Project Manager by phone or email</p>
+			<address class="contact-info">
+				<a href="tel:+971(0)555 555" class="contact-info__number">+971 (0) 555 555</a>
+				<a href="mailto:help@qtest.com" class="contact-info__email">help@qtest.com</a>
+			</address>
+		</div>
+	</section>
+	<form action="#" method="post">
+		<fieldset class="translate">
+			<h2 class="translate__title">Select what you want to translate</h2>
+			<div class="choise-wrapper">
+				<input type="radio" id="choice1" name="translate" value="website" hidden>
+				<label for="choice1" class="translate__choice">
+					<img src="img/website.png" alt="Website" class="translate__img">
+					<span class="translate__text">Website</span>
+				</label>
+
+				<input type="radio" id="choice2" name="translate" value="documents" hidden checked>
+				<label for="choice2" class="translate__choice">
+					<img src="img/documents.png" alt="Documents" class="translate__img">
+					<span class="translate__text">Documents</span>
+				</label>
+
+				<input type="radio" id="choice3" name="translate" value="social" hidden>
+				<label for="choice3" class="translate__choice">
+					<img src="img/social.png" alt="Social account" class="translate__img">
+					<span class="translate__text">Social account</span>
+				</label>
+			</div>
+		</fieldset>
+		<fieldset class="upload">
+			<h3 class="upload__title" data-count="1">Upload  your documents <span>(Doc, Docx, Text,  PDF, Markdown)</span></h3>
+			<input type="file" id="file" name="upload-file" multiple hidden accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+			<label for="file" class="upload__btn">Upload a new file</label>
+			<table class="upload__table">
+				<tr>
+					<th>File name</th>
+					<th>File size</th>
+					<th>Number of words</th>
+					<th>Remove</th>
+				</tr>
+				<tr>
+					<td>business_operations.docx</td>
+					<td>78kb</td>
+					<td>842</td>
+					<td><i class="fa fa-trash" aria-hidden="true"></i></td>
+				</tr>
+				<tr>
+					<td>business_financial.docx</td>
+					<td>26kb</td>
+					<td>2,326</td>
+					<td><i class="fa fa-trash" aria-hidden="true"></i></td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<fieldset class="languages">
+			<h3 data-count="2">Chose your languages pairings</h3>
+			<div class="languages__wrapper">
+				<p class="languages__text">From</p>
+				<select name="fromLanguage">
+					<option value="fromEnglish">English</option>
+					<option value="fromArabic">Arabic</option>
+					<option value="fromUkrainian">Ukrainian</option>
+				</select>
+			</div>
+			<div class="languages__wrapper languages__wrapper--to">
+				<p class="languages__text">To</p>
+				<select name="toLanguage1">
+					<option value="toEnglish">English</option>
+					<option value="toArabic" selected>Arabic</option>
+					<option value="toUkrainian">Ukrainian</option>
+				</select>
+				<select name="toLanguage2">
+					<option value="toKurdish">Kurdish</option>
+					<option value="toArabic">Arabic</option>
+					<option value="toUkrainian">Ukrainian</option>
+				</select>
+				<label for="languages__button" class="languages__btn"></label>
+				<input class="languages__button" id="languages__button" type="button" value="Add">
+			</div>
+		</fieldset>
+		<div class="tone">
+			<div class="document-tone">
+				<h3 data-count="3">Select your desired tone</h3>
+				<input type="radio" id="casualTone" name="tone" value="casualTone" hidden>
+				<label for="casualTone" class="document-tone__choice document-tone__choice--1">Friendly / Casual</label>
+				<input type="radio" id="corporateTone" name="tone" value="corporateTone" hidden checked>
+				<label for="corporateTone" class="document-tone__choice document-tone__choice--2">Corporate / Pro</label>
+				<input type="radio" id="formalTone" name="tone" value="formalTone" hidden>
+				<label for="formalTone" class="document-tone__choice document-tone__choice--3">Media / Formal</label>
+			</div>
+			<div class="time-limit">
+				<h3 data-count="4">Tell us  how urgent this job is</h3>
+				<input type="range" min="0" max="100">
+				<ul class="time-limit__list">
+					<li class="time-limit__item">I got time</li>
+					<li class="time-limit__item">Average</li>
+					<li class="time-limit__item">Yersterday</li>
+				</ul>
+				<legend class="legend">
+					<h2 class="legend__title">Timeline info</h2>
+					<p class="legend__text">With an <b>average</b> timeline set up, our expert tramslater can take reasonable amount of time perfecting you translation</p>
+				</legend>
+			</div>
+		</div>
+		<fieldset class="payment">
+			<h3 data-count="5">Sign up and choose a payment method</h3>
+			<div class="payment__wrapper">
+				<p class="payment__text">Already have an account with us? <a class="payment__singIn" href="#">Sign in</a></p>
+				<label class="payment__label" for="clientName" pattern="a-zA-ZА-Яа-яЁё">Full name</label>
+				<input class="payment__personal-info" type="text" id="clientName" name="name" pattern="[A-Za-z' -]+" minlength="2" maxlength="50" required>
+			</div>
+			<div class="payment__wrapper payment__wrapper--2">
+				<p>		
+					<label class="payment__label" for="clientEmail">Email adress</label>
+					<input class="payment__personal-info" type="email" name="email" id="clientEmail" pattern="[A-Za-z0-9._-]+@[a-z]+\.[a-z]{2,4}$" required>
+				</p>
+				<p>
+					<label class="payment__label" for="clientPassword">Chose a password</label>
+					<input class="payment__personal-info" type="password" name="password" id="clientPassword" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Password should at least 8 or more symbols" required>
+				</p>
+			</div>
+			<div class="payment__wrapper payment__wrapper--3">
+				<input type="radio" id="visaMastercard" name="payment" value="visa" hidden checked>
+				<label for="visaMastercard" class="payment-metod payment-metod--visa"></label>
+				<input type="radio" id="payPal" name="payment" value="payPal" hidden>
+				<label for="payPal" class="payment-metod payment-metod--payPal"></label>
+				<input type="radio" id="amazon" name="payment" value="amazon" hidden>
+				<label for="amazon" class="payment-metod payment-metod--amazon"></label>
+			</div>
+			<div class="payment__wrapper payment__wrapper--2">
+				<p>
+					<label for="cardNumber" class="payment__label">Card number</label>
+					<input type="text" class="payment__card-info payment__card-info--1" id="cardNumber" pattern="[0-9]{16}" required>
+				</p>
+				<p>
+					<label for="date" class="payment__label payment__label--1">Expiry date</label>
+					<input type="date" class="payment__card-info payment__card-info--2" id="date" required>
+				</p>
+				<p>
+					<label for="SVVcode" class="payment__label">code</label>
+					<input type="text" class="payment__card-info payment__card-info--3" id="SVVcode" pattern="[0-9]{3}" required>
+				</p>
+			</div>
+		</fieldset>
+		<div class="submiting-wrapper">
+			<input type="checkbox"  id="agreement">
+			<label class="agreement" for="agreement">I agree to the <a href="#">Terms &#38; Conditions</a></label>
+			<input class="button button-submit button-submit--footer" type="submit" value="Place order">
+			<input class="button button-print button-print--footer" type="button" value="Print a quote">
+		</div>
+	</form>
+</main>
+<footer>
+	
+</footer>
+</body>
+</html>
