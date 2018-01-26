@@ -14,4 +14,4 @@
 
 ## Task 11
 
-Form you can see on [GitHub Pages]  (https://victoriiaklubchuk.github.io/kottans_frontend/task_11/dist/)
+Form you can see on [GitHub Pages]  (https://victoriiaklubchuk.github.io/kottans_frontend/task_11/dist/ )
