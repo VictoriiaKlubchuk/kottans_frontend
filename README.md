@@ -9,3 +9,9 @@
 * Nonetheless, I intend to use this knowledge further in my work. Git is really useful tool for developers.
 
 > Thanks for the course!
+
+
+
+## Task 11
+
+Demo: https://victoriiaklubchuk.github.io/kottans_frontend/task_11/dist/
