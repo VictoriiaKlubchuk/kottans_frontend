@@ -11,6 +11,18 @@
 > Thanks for the course!
 
 
+## Task 1
+
+#### Linux Command Line Basics
+
+* The course refreshed my knowledge how to navigate on Linux in Terminal.
+
+* It is not deep course, just a few simple commands.
+
+* Some command I used to use, but now I use Windows.
+
+> It was good experience!
+
 
 ## Task 11
 
