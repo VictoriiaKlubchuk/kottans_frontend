@@ -23,6 +23,26 @@
 
 > It was good experience!
 
+#### Configuring Linux Web Servers
+
+* There are a log of new information. I leant some new commands such as `vagrant up`, `vagrant ssh`, `finger [user_name]`... about Octal Permissions and how to break out this entry.
+
+* Some information on the course was new. So after some time I am going to repeat this course. I think, this cousre was very useful.
+
+> Thanks for this challenge.
+
+#### Networking For Web Developers
+
+* Almost all informations in this course was new for me. So it was quite challenging.
+
+* Despite of this, it showed me how internet works, what IPv4 & IPv6 are, how connections between users work, what Protocols and Ports are. All information are useful.
+
+* This course broaden my horizons at this field and gave me answers on my questions.
+
+> It was as hard as interesting. :thumbsup:
+
+
+
 
 ## Task 11
 
