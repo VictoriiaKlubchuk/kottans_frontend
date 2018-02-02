@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pizza App task_12</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/4a582f4e95.js"></script>
+</head>
+<body>
+	<header>
+		<div>
+			<span class="header__time">
+				<time class="current-time" id="current-time">9:23:23</time>
+			</span>
+		</div>
+		<div class="logo">
+			<img src="img/logo.jpg" alt="logo">
+		</div>
+		<div class="auth">
+			<button value="signIn" class="button">Sign in</button>
+			<button value="signUp" class="button">Sign up</button>
+		</div>
+	</header>
+
+	<main>
+		<button value="add" class="button button__add-pizza">+ add new pizza</button>
+		<div class="pizzas-wrapper">
+			
+			<figure class="pizza">
+				<img src="img/pizza1.png" alt="pizza1" class="pizza__img">
+				<figcaption>
+					<h1 class="pizza__title">Pizza_1</h1>
+					<div class="pizza__details">
+						<span class="ordered"><time>XX:XX:XX</time></span>
+						<span class="queue-number">#1</span>
+					</div>
+					<div class="pizza__details">
+						<span  class="arival-time">ETA: <time>13:24</time></span>
+						<span class="total-price">$45.25</span>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="pizza">
+				<img src="img/pizza2.png" alt="pizza2" class="pizza__img">
+				<figcaption>
+					<h1 class="pizza__title">Pizza_2</h1>
+					<div class="pizza__details">
+						<span class="ordered"><time>XX:XX:XX</time></span>
+						<span class="queue-number">#2</span>
+					</div>
+					<div class="pizza__details">
+						<span  class="arival-time">ETA: <time>13:44</time></span>
+						<span class="total-price">$25.50</span>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="pizza">
+				<img src="img/pizza3.png" alt="pizza3" class="pizza__img">
+				<figcaption>
+					<h1 class="pizza__title">Pizza_3</h1>
+					<div class="pizza__details">
+						<span class="ordered"><time>XX:XX:XX</time></span>
+						<span class="queue-number">#3</span>
+					</div>
+					<div class="pizza__details">
+						<span  class="arival-time">ETA: <time>13:55</time></span>
+						<span class="total-price">$39.95</span>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="pizza">
+				<img src="img/pizza1.png" alt="pizza4" class="pizza__img">
+				<figcaption>
+					<h1 class="pizza__title">Pizza_4</h1>
+					<div class="pizza__details">
+						<span class="ordered"><time>XX:XX:XX</time></span>
+						<span class="queue-number">#4</span>
+					</div>
+					<div class="pizza__details">
+						<span  class="arival-time">ETA: <time>14:15</time></span>
+						<span class="total-price">$19.25</span>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="pizza">
+				<img src="img/pizza3.png" alt="pizza5" class="pizza__img">
+				<figcaption>
+					<h1 class="pizza__title">Pizza_5</h1>
+					<div class="pizza__details">
+						<span class="ordered"><time>XX:XX:XX</time></span>
+						<span class="queue-number">#5</span>
+					</div>
+					<div class="pizza__details">
+						<span  class="arival-time">ETA: <time>13:24</time></span>
+						<span class="total-price">$45.25</span>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="pizza">
+				<img src="img/pizza2.png" alt="pizza6" class="pizza__img">
+				<figcaption>
+					<h1 class="pizza__title">Pizza_6</h1>
+					<div class="pizza__details">
+						<span class="ordered"><time>XX:XX:XX</time></span>
+						<span class="queue-number">#6</span>
+					</div>
+					<div class="pizza__details">
+						<span  class="arival-time">ETA: <time>13:44</time></span>
+						<span class="total-price">$25.50</span>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="pizza">
+				<img src="img/pizza1.png" alt="pizza7" class="pizza__img">
+				<figcaption>
+					<h1 class="pizza__title">Pizza_7</h1>
+					<div class="pizza__details">
+						<span class="ordered"><time>XX:XX:XX</time></span>
+						<span class="queue-number">#7</span>
+					</div>
+					<div class="pizza__details">
+						<span  class="arival-time">ETA: <time>13:55</time></span>
+						<span class="total-price">$39.95</span>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="pizza">
+				<img src="img/pizza2.png" alt="pizza8" class="pizza__img">
+				<figcaption>
+					<h1 class="pizza__title">Pizza_8</h1>
+					<div class="pizza__details">
+						<span class="ordered"><time>XX:XX:XX</time></span>
+						<span class="queue-number">#8</span>
+					</div>
+					<div class="pizza__details">
+						<span  class="arival-time">ETA: <time>14:15</time></span>
+						<span class="total-price">$19.25</span>
+					</div>
+				</figcaption>
+			</figure>
+		</div>
+	</main>
+
+	<footer>
+		<div>
+			<img src="img/logo.jpg" alt="smalLogo" class="logo logo--small">
+		</div>
+		<address class="address">
+			<a href="#">Kottans</a>
+			<a href="tel:0505050500">tel: 050 50 50 500</a>
+		</address>
+	</footer>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

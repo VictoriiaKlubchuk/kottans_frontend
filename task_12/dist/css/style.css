@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+a {
+  text-decoration: none; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: light;
+  font-style: normal;
+  src: url("../fonts/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+
+body {
+  font-family: 'Roboto', san-serif;
+  font-weight: normal; }
+
+/*HEADER*/
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  border-bottom: 3px solid #e94a42;
+  background-color: #1e1e1e; }
+
+.header__time {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+  color: #f5f5f5;
+  font-size: 14px; }
+
+.header__time::before {
+  position: absolute;
+  top: -3px;
+  left: -30px;
+  color: #ffe510;
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  content: "\f017"; }
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: transparent;
+  color: #f5f5f5;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.button:hover {
+  border: 1px solid #e94a42;
+  color: #75ce36;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+/*PIZZAS*/
+main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.button__add-pizza {
+  width: 200px;
+  margin: 30px;
+  border: 1px solid #e94a42;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: transparent;
+  color: #e94a42;
+  font-size: 14px; }
+
+.pizzas-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 30px; }
+
+.pizza {
+  max-width: 350px;
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  cursor: pointer; }
+
+.pizza:hover {
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.75);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.pizza__details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px; }
+
+.pizza__img {
+  width: 280px;
+  margin: 10px; }
+
+.pizza__title {
+  color: #75ce36;
+  font-family: inherit;
+  font-size: 24px;
+  text-align: center; }
+
+/*FOOTER*/
+footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border-top: 3px solid #e94a42;
+  background-color: #1e1e1e; }
+
+.logo--small {
+  width: 100px; }
+
+.address {
+  margin: 20px; }
+
+a {
+  display: block;
+  color: #75ce36;
+  font-size: 10px;
+  line-height: 15px; }
+
+a:hover {
+  color: #ffe510; }
+
+@media (min-width: 480px) {
+  /*HEADER*/
+  header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 200px; }
+  .header__time {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0;
+    padding-left: 40px; }
+  .header__time::before {
+    top: -3px;
+    left: 17px;
+    font-size: 20px; }
+  .auth {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .button {
+    padding: 10px 10px;
+    margin-top: 0;
+    margin-right: 20px;
+    font-size: 10px; }
+  /*MAIN*/
+  .button__add-pizza {
+    margin: 40px; }
+  /*FOOTER*/
+  .logo--small {
+    margin-left: 20px; } }
+
+@media (min-width: 768px) {
+  /*HEADER*/
+  .header__time {
+    padding-left: 80px; }
+  .header__time::before {
+    top: -3px;
+    left: 54px; }
+  .button {
+    padding: 10px 30px;
+    font-size: 12px; }
+  /*MAIN*/
+  .pizzas-wrapper {
+    max-width: 960px; } }
