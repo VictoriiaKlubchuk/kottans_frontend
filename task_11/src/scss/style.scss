@@ -10,233 +10,244 @@ $titleGray:      #6e768f;
 $blue:           #5fcac6;
 $borderBlue:     #54aca9;
 $inputBlue:      #76a7e1;
-$white:		       #fff;
+$white:          #fff;
 $orange:         #e6b05e;
 
 /*BODY style*/
 body {
-	color: $fontGray;
-	font-family: 'Proxima Nova', Calibri, sans-serif;
-	font-size: 12px;
-	background-color: $backgroundGray;
+  color: $fontGray;
+  font-family: 'Proxima Nova', Calibri, sans-serif;
+  font-size: 12px;
+  background-color: $backgroundGray;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-input, select, input:focus {
-	outline: none;
+input, select, input::focus {
+  outline: none;
 }
 
 /*HEADER*/
-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	max-width: 910px;
-	margin: 0 auto;
-	input {
-		background-color: $backgroundGray;
-		border: 1px solid $borderGray;
-		font-family: 'Proxima Nova';
-		color: $borderGray;
-	}
-}
 
 section,
 form {
-	background-color: $white;
+  background-color: $white;
 }
 
-/*ORDER Info----and HELP Info*/
+/*ORDER Info and HELP Info*/
 .header {
-	display: flex;
-	max-width: 910px;
-	margin: 0 auto;
-	border: 1px solid $borderGray;
-	border-radius: 5px 5px 0 0;
-	border-bottom: none;
+  display: flex;
+  max-width: 910px;
+  margin: 0 auto;
+  border: 1px solid $borderGray;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
 }
 
 .order {
-	display: flex;
-	justify-content: space-around;
-	width: 626px;
-	margin: 27px 0 15px 0
+  display: flex;
+  justify-content: space-around;
+  width: 626px;
+  margin: 27px 0 15px 0
 }
 
 .order__title {
-	text-transform: uppercase;
-	position: relative;
-	color: $titleGray;
-	font-weight: bold;
-	margin-bottom: 27px;
-	text-indent: 34px;
-	font-size: 10px;
-	letter-spacing: 1px;
+  position: relative;
+  margin-bottom: 27px;
+  color: $titleGray;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-indent: 34px;
+  text-transform: uppercase;
 }
 
 .order__title::before {
-	content:'';
-	position: absolute;
-	top: -4px;
-	left: 10px;
-	width: 12px;
-	height: 17px;
-	background-image: url('../img/order-symbol.png');
-	background-size: 12px 17px;
+  position: absolute;
+  top: -4px;
+  left: 10px;
+  width: 12px;
+  height: 17px;
+  background-image: url('../img/order-symbol.png');
+  background-size: 12px 17px;
+  content:'';
 }
 
 th {
-	width: 90px;
-	padding-left: 18px;
-	color: $titleGray;
-	font-size: 11px;
-	text-transform: uppercase;
-	font-weight: bold;
+  width: 90px;
+  padding-left: 18px;
+  color: $titleGray;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 td {
-	width: 90px;
-	padding-left: 18px;
-	font-size: 11px;
-	line-height: 30px;
-	text-align: center;
-	cursor: pointer;
+  width: 90px;
+  padding-left: 18px;
+  font-size: 11px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .order__buttons {
-	display: flex;
-	height: 90px;
-	flex-direction: column;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
 }
 
 .button {
-	display: block;
-	width: 140px;
-	height: 40px;
-	font-size: 10px;
-	text-transform: uppercase;
-	border-radius: 3px;
-	cursor: pointer;
+  display: block;
+  width: 140px;
+  height: 40px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 1px solid $blue;
+  background-color: $white;
+  color: $blue;
+  font-weight: bold;
+  transition: .5s;
 }
 
 .button-submit {
-	background-color: $blue;
-	border: 1px solid $borderBlue;
-	color: $white;
+  background-color: $blue;
+  border: 1px solid $borderBlue;
+  color: $white;
 }
 
 .button-print {
-	background-color: $lightGray;
-	border: 1px solid $gray;
-	color: inherit;
+  background-color: $lightGray;
+  border: 1px solid $gray;
+  color: inherit;
 }
 
 .help-info {
-	padding-top: 30px;
-	width: 270px;
-	border-left: 1px solid $borderGray;
+  padding-top: 30px;
+  width: 270px;
+  border-left: 1px solid $borderGray;
 }
 
 .help-info__title {
-	@extend .order__title;
-	margin-bottom: 0px;
-	text-indent: 43px;
+  @extend .order__title;
+  margin-bottom: 0px;
+  text-indent: 43px;
 }
 
 .help-info__title::before {
-	background-image: url('../img/help-symbol.png');
-	background-size: 20px 20px;
-	width: 20px;
-	height: 20px;
-	top: -3px;
-	left: 10px;
+  background-image: url('../img/help-symbol.png');
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  left: 10px;
 }
 
 .help-info__text {
-	padding:10px 0 10px 43px;
-	font-size: 10px;
-	line-height: 16px;
+  padding:10px 0 10px 43px;
+  font-size: 10px;
+  line-height: 16px;
 }
 
 .contact-info {
-	padding-left: 43px;
+  padding-left: 43px;
 }
 
 .contact-info__number {
-	color: $titleGray;
-	font-size: 12px;
-	padding-right: 10px;
+  color: $titleGray;
+  font-size: 12px;
+  padding-right: 10px;
 }
 
+.contact-info__number:hover {
+  color: $blue;
+  transition: .5s;
+}
+ 
 .contact-info__email {
-	@extend .contact-info__number;
+  @extend .contact-info__number;
 }
 
 /*FORM*/
 form {
-	max-width: 910px;
-	margin: 0 auto;
-	border: 1px solid $borderGray;
-	border-radius: 0 0 5px 5px;
+  max-width: 910px;
+  margin: 0 auto;
+  border: 1px solid $borderGray;
+  border-radius: 0 0 5px 5px;
 }
 
 /*TRANSLATE*/
 .translate {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .translate__title {
-	display: inline;
-	width: 460px;
-	margin:70px 0 60px 230px;
-	border-bottom: 1px solid $borderGray;  
-	color: $titleGray;
-	font-size: 16px;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 38px;
-	letter-spacing: 3px;
+  display: inline;
+  width: 460px;
+  margin:70px 0 60px 230px;
+  border-bottom: 1px solid $borderGray;  
+  color: $titleGray;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 38px;
+  letter-spacing: 3px;
 }
 
-/*inputs*/
+/*choice inputs*/
 .choise-wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	max-width: 700px;
-	margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: auto;
 }
 
 .translate__choice {
-	width: 210px;
-	height: 155px;
-	border: 1px solid $borderGray;
-	background-color: $backgroundGray;
-	border-radius: 5px;
-	padding-top: 20px;
-	cursor: pointer;
-	text-align: center;
+  width: 210px;
+  height: 155px;
+  border: 1px solid $borderGray;
+  background-color: $backgroundGray;
+  border-radius: 5px;
+  padding-top: 20px;
+  cursor: pointer;
+  text-align: center;
 }
 
 .translate__img {
-	display: block;
-	margin: auto;
+  display: block;
+  margin: auto;
 }
 
 .translate__text {
-	font-weight: bold;
-	line-height: 30px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 input[type=radio]:checked + label {
   position: relative;
-  border: 5px solid $inputBlue;
+  box-shadow: 0 0 0 5px $inputBlue;
 }
 
 input[type=radio]:checked + label::after {
@@ -244,27 +255,27 @@ input[type=radio]:checked + label::after {
   position: absolute;
   top: -15px;
   right: -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   background-image: url('../img/checked.png');
   background-position: 5px 8px;
   background-size: 20px 15px;
   background-repeat: no-repeat;
   background-color: $inputBlue;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
 }
 
 /*Upload*/
 h3 {
-	margin: 30px 0 30px 103px;
-	font-size: 19px;
-	color: $titleGray;
-	position: relative;
+  position: relative;
+  margin: 30px 0 30px 103px;
+  color: $titleGray;
+  font-size: 19px;
 }
 
 h3 > span {
-	font-size: 12px;
-	color: $gray;
+  font-size: 12px;
+  color: $gray;
 }
 
 h3::before {
@@ -282,60 +293,80 @@ h3::before {
 }
 
 .upload {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .upload__btn {
-	margin: 17px 0 26px 100px;
-	position: relative;
-	display: inline-block;
-	padding: 14px 28px 14px 55px;
-	background: $backgroundGray;
-	border-radius: 5px;
-	border: 1px solid $borderGray;
-	color: $titleGray;
-	font-size: 13px;
+  position: relative;
+  display: inline-block;
+  margin: 17px 0 26px 100px;
+  padding: 14px 28px 14px 55px;
+  background: $backgroundGray;
+  border-radius: 5px;
+  border: 1px solid $borderGray;
+  color: $titleGray;
+  font-size: 13px;
+}
+
+.upload__btn:hover {
+  @extend .button:hover;
+  font-weight: normal;
+}
+
+.upload__btn:focus {
+  border-color: $blue;
 }
 
 .upload__btn::before {
-	content: '\f0ee';
-	position: absolute;
-	top: 11px;
-	left: 27px;
+  content: '\f0ee';
+  position: absolute;
+  top: 11px;
+  left: 27px;
   font-family: 'FontAwesome';
   font-size: 17px;
 }
 
 .upload__table {
-	width: 78%;
-	margin: 20px auto;
-	border: 1px solid $borderGray;
-	border-radius: 5px;
-	line-height: 30px;
-	border-collapse: separate;
-	border-spacing: 2px 5px;
+  width: 78%;
+  margin: 20px auto;
+  border: 1px solid $borderGray;
+  border-radius: 5px;
+  line-height: 30px;
+  border-collapse: separate;
+  border-spacing: 2px 5px;
+}
+
+.upload__delete {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+}
+
+.upload__delete:hover {
+  color: red;
 }
 
 /*Languages*/ 
 .languages__wrapper {
-	margin: 20px 0 20px 60px;
+  margin: 20px 0 20px 60px;
 }
 
 .languages__wrapper--to {
-	margin-left: 77px;
+  margin-left: 77px;
 }
 
 .languages__text {
-	font-family: inherit;
-	text-transform: uppercase;
-	float: left;
-	text-align: right;
-	padding: 12px 20px;
+  font-family: inherit;
+  text-transform: uppercase;
+  float: left;
+  text-align: right;
+  padding: 12px 20px;
 }
 
 select {
-	position: relative;
-	width: 200px;
+  position: relative;
+  width: 200px;
   height: 40px;
   margin-right: 20px;
   border-radius: 5px;
@@ -354,219 +385,224 @@ select {
 }
 
 .languages__button {
-	border: 1px solid $borderGray;
-	border-radius: 5px;
-	background: $backgroundGray;
-	color: $titleGray;
-	text-indent: 20px;
-	padding: 12px 30px;
-	text-transform: uppercase;
+  border: 1px solid $borderGray;
+  border-radius: 5px;
+  background: $backgroundGray;
+  color: $titleGray;
+  text-indent: 20px;
+  padding: 12px 30px;
+  text-transform: uppercase;
 }
 
 .languages__btn {
-	position: relative;
+  position: relative;
 }
 
 .languages__btn::before {
-	content: "\f067";
-	font-family: 'FontAwesome';
-	position: absolute;
-	top: 2px;
-	left: 30px;
+  content: "\f067";
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 2px;
+  left: 30px;
   color: $titleGray;
 }
 
 /*Tone of documents*/
 .tone {
-	display: flex;
-	flex-direction: row;
-	justify-content: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 
 .document-tone {
-	width: 315px;
-	display: flex;
-	flex-direction: column;
+  width: 315px;
+  display: flex;
+  flex-direction: column;
 }
 
 .document-tone__choice {
-	@extend .languages__button;
-	width: 185px;
-	margin: 16px 0 0 100px;
-	text-transform: none;
-	padding: 15px 10px;
-	text-indent: 50px;
-	position: relative;
+  @extend .languages__button;
+  width: 185px;
+  margin: 16px 0 0 100px;
+  text-transform: none;
+  padding: 15px 10px;
+  text-indent: 50px;
+  position: relative;
 }
 
 .document-tone__choice::before {
-	content: "";
-	font-family: 'FontAwesome';
-	position: absolute;
-	left: -16px;
-	top: 14px;
-	font-size: 14px;
+  content: "";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: -16px;
+  top: 14px;
+  font-size: 14px;
 }
 
 .document-tone__choice--1::before {
-	content: "\f086";
+  content: "\f086";
 }
 
 .document-tone__choice--2::before {
-	content: "\f0f2";
+  content: "\f0f2";
 }
 
 .document-tone__choice--3::before {
-	content: "\f0a1";
+  content: "\f0a1";
 }
 
 /*Time limit*/
 .time-limit {
-	width: 430px;
-	margin-left: 70px;
+  width: 430px;
+  margin-left: 70px;
 }
 
 input[type=range] {
-	-webkit-appearance: none;
-	position: relative;
-	margin: 20px 0 10px 50px;
-	width: 350px;
+  -webkit-appearance: none;
+  position: relative;
+  margin: 20px 0 10px 50px;
+  width: 350px;
+  outline: non
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-	-webkit-appearance: none;
-	background: $lightGray;
-	height: 10px;
-	border-radius: 5px;
+  -webkit-appearance: none;
+  background: $lightGray;
+  height: 10px;
+  border-radius: 5px;
 }
 
 input[type=range]::before {
-	content: '';
-	display: block;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border-radius: 10px;
-	background-color: $gray;
-	left: 0px;
-	z-index: 1;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: $gray;
+  left: 0px;
+  z-index: 1;
 }
 
 input[type=range]::after {
-	content: '';
-	display: block;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border-radius: 10px;
-	background-color: $gray;
-	right: 0px;
-	z-index: 1;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: $gray;
+  right: 0px;
+  z-index: 1;
 }
 
 input[type=range]::-webkit-slider-thumb {
-	-webkit-appearance: none; 
-	width: 20px;
-	height: 20px;
-	background-color: $orange;
-	border-radius: 20px;
-	position: relative;
-	top: -5px;
-	z-index: 2;
+  -webkit-appearance: none; 
+  width: 20px;
+  height: 20px;
+  background-color: $orange;
+  border-radius: 20px;
+  position: relative;
+  outline: none;
+  top: -5px;
+  z-index: 2;
 }
 
 .time-limit__item {
-	display: inline;
-	margin-left: 30px;
-	text-transform: uppercase;
+  display: inline;
+  margin-left: 30px;
+  text-transform: uppercase;
 }
 
 .time-limit__item:nth-child(2){
-	color: $orange;
-	margin-left: 105px;
-	margin-right: 72px;
+  color: $orange;
+  margin-left: 105px;
+  margin-right: 72px;
 }
 
 .legend {
-	margin: 30px 0 30px 30px;
-	border: 1px solid $borderGray;
-	border-radius: 5px;
-	padding: 20px;
+  margin: 30px 0 30px 30px;
+  border: 1px solid $borderGray;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .legend__title {
-	text-transform: uppercase;
-	position: relative;
-	color: $titleGray;
-	font-weight: bold;
-	margin-bottom: 15px;
-	text-indent: 34px;
-	font-size: 10px;
-	letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  color: $titleGray;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-indent: 34px;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
 .legend__title::before {
-	content: "\f05a";
-	position: absolute;
-	font-family: 'FontAwesome';
-	top: -3px;
-	left: -22px;
-	font-size: 14px;
+  content: "\f05a";
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: -3px;
+  left: -22px;
+  font-size: 14px;
 }
 
 .legend__text {
-	line-height: 20px;
-	padding-left: 30px;
+  line-height: 20px;
+  padding-left: 30px;
 }
 
 b {
-	color: $orange;
-	text-transform: uppercase;
+  color: $orange;
+  text-transform: uppercase;
 }
 
 
 
 /*Payment*/
 .payment {
-	margin-bottom: 95px;
+  margin-bottom: 95px;
 }
 
 .payment__wrapper {
-	padding-left: 100px;
+  padding-left: 100px;
 }
 
 .payment__wrapper--2 {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .payment__wrapper--3 {
-	margin: 45px 0;
+  margin: 45px 0;
 }
 .payment__text {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .payment__singIn {
-	color: inherit;
-	text-decoration: underline;
+  color: inherit;
+  text-decoration: underline;
+}
+.payment__singIn:hover {
+  color: $borderBlue;
 }
 
 .payment__label {
-	display: block;
-	margin: 30px 0 10px 10px;
-	text-transform: uppercase;
+  display: block;
+  margin: 30px 0 10px 10px;
+  text-transform: uppercase;
 }
 
 .payment__personal-info {
-	width: 300px;
+  width: 300px;
   font-weight: bold;
   padding: 10px 40px 10px 20px;
-	border-radius: 5px;
-	border: 1px solid $borderGray;
-	color: $titleGray;
-	position: relative;
-	margin-right: 40px;
+  border-radius: 5px;
+  border: 1px solid $borderGray;
+  color: $titleGray;
+  position: relative;
+  margin-right: 40px;
 }
 
 .payment__personal-info:valid {
@@ -583,67 +619,67 @@ b {
 
 /*Payment method*/
 .payment-metod {
-	display: inline-block;
-	width: 185px;
-	height: 90px;
-	border: 1px solid $borderGray;
-	background-color: $backgroundGray;
-	border-radius: 5px;
-	background-repeat: no-repeat;
+  display: inline-block;
+  width: 185px;
+  height: 90px;
+  border: 1px solid $borderGray;
+  background-color: $backgroundGray;
+  border-radius: 5px;
+  background-repeat: no-repeat;
   background-position: 39px 27px;
-	background-size: 100px 28px;
+  background-size: 100px 28px;
 }
 
 .payment-metod--visa {
-	background-image: url(../img/visa.png);
+  background-image: url(../img/visa.png);
 }
 
 .payment-metod--payPal {
-	background-image: url(../img/PayPal.png);
-	margin: 0 80px;
+  background-image: url(../img/PayPal.png);
+  margin: 0 80px;
 }
 
 .payment-metod--amazon {
-	background-image: url(../img/amazon.png);
-	background-position: 39px 39px;
-	background-size: 108px 25px;
+  background-image: url(../img/amazon.png);
+  background-position: 39px 39px;
+  background-size: 108px 25px;
 }
 
 /*Card-info*/
 
 .payment__card-info {
-	width: 230px;
+  width: 230px;
   font-weight: bold;
   padding: 10px 40px 10px 20px;
-	border-radius: 5px;
-	border: 1px solid $borderGray;
-	color: $titleGray;
-	position: relative;
-	margin-right: 40px;
+  border-radius: 5px;
+  border: 1px solid $borderGray;
+  color: $titleGray;
+  position: relative;
+  margin-right: 40px;
 }
 
 .payment__card-info--2 {
-	padding-top: 5px;
-	width: 180px;
+  padding-top: 5px;
+  width: 180px;
 }
 
 .payment__card-info--3 {
-	width: 60px;
+  width: 70px;
+  padding: 10px 10px 10px 20px;
 }
 
 /*submiting-wrapper*/
 .submiting-wrapper {
-	padding-left: 250px;
+  padding-left: 250px;
 }
 
 .button-submit--footer {
-	display: inline;
+  display: inline;
 }
 
 .button-print--footer {
-	display: inline;
+  display: inline;
 }
 .submiting-wrapper > input {
-	margin: 20px;
+  margin: 20px;
 }
-

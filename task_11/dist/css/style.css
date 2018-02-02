@@ -91,37 +91,15 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-input, select, input:focus {
+input, select, input::focus {
   outline: none; }
 
 /*HEADER*/
-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  max-width: 910px;
-  margin: 0 auto; }
-  header input {
-    background-color: #eceef4;
-    border: 1px solid #d7d8e0;
-    font-family: 'Proxima Nova';
-    color: #d7d8e0; }
-
 section,
 form {
   background-color: #fff; }
 
-/*ORDER Info----and HELP Info*/
+/*ORDER Info and HELP Info*/
 .header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -130,9 +108,9 @@ form {
   max-width: 910px;
   margin: 0 auto;
   border: 1px solid #d7d8e0;
+  border-bottom: none;
   -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-  border-bottom: none; }
+  border-radius: 5px 5px 0 0; }
 
 .order {
   display: -webkit-box;
@@ -146,17 +124,16 @@ form {
   margin: 27px 0 15px 0; }
 
 .order__title, .help-info__title {
-  text-transform: uppercase;
   position: relative;
-  color: #6e768f;
-  font-weight: bold;
   margin-bottom: 27px;
-  text-indent: 34px;
+  color: #6e768f;
   font-size: 10px;
-  letter-spacing: 1px; }
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-indent: 34px;
+  text-transform: uppercase; }
 
 .order__title::before, .help-info__title::before {
-  content: '';
   position: absolute;
   top: -4px;
   left: 10px;
@@ -164,15 +141,16 @@ form {
   height: 17px;
   background-image: url("../img/order-symbol.png");
   -webkit-background-size: 12px 17px;
-  background-size: 12px 17px; }
+  background-size: 12px 17px;
+  content: ''; }
 
 th {
   width: 90px;
   padding-left: 18px;
   color: #6e768f;
   font-size: 11px;
-  text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
 
 td {
   width: 90px;
@@ -187,7 +165,6 @@ td {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 90px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -196,7 +173,8 @@ td {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 90px; }
 
 .button {
   display: block;
@@ -207,6 +185,15 @@ td {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   cursor: pointer; }
+
+.button:hover, .upload__btn:hover {
+  border: 1px solid #5fcac6;
+  background-color: #fff;
+  color: #5fcac6;
+  font-weight: bold;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
 
 .button-submit {
   background-color: #5fcac6;
@@ -249,6 +236,12 @@ td {
   font-size: 12px;
   padding-right: 10px; }
 
+.contact-info__number:hover, .contact-info__email:hover {
+  color: #5fcac6;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
 /*FORM*/
 form {
   max-width: 910px;
@@ -285,7 +278,7 @@ form {
   line-height: 38px;
   letter-spacing: 3px; }
 
-/*inputs*/
+/*choice inputs*/
 .choise-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -322,32 +315,43 @@ form {
   font-weight: bold;
   line-height: 30px; }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
 input[type=radio]:checked + label {
   position: relative;
-  border: 5px solid #76a7e1; }
+  -webkit-box-shadow: 0 0 0 5px #76a7e1;
+  box-shadow: 0 0 0 5px #76a7e1; }
 
 input[type=radio]:checked + label::after {
   content: '';
   position: absolute;
   top: -15px;
   right: -15px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   background-image: url("../img/checked.png");
   background-position: 5px 8px;
   -webkit-background-size: 20px 15px;
   background-size: 20px 15px;
   background-repeat: no-repeat;
-  background-color: #76a7e1;
-  width: 30px;
-  height: 30px;
-  -webkit-border-radius: 50%;
-  border-radius: 50%; }
+  background-color: #76a7e1; }
 
 /*Upload*/
 h3 {
+  position: relative;
   margin: 30px 0 30px 103px;
-  font-size: 19px;
   color: #6e768f;
-  position: relative; }
+  font-size: 19px; }
 
 h3 > span {
   font-size: 12px;
@@ -380,9 +384,9 @@ h3::before {
   margin-top: 30px; }
 
 .upload__btn {
-  margin: 17px 0 26px 100px;
   position: relative;
   display: inline-block;
+  margin: 17px 0 26px 100px;
   padding: 14px 28px 14px 55px;
   background: #eceef4;
   -webkit-border-radius: 5px;
@@ -390,6 +394,12 @@ h3::before {
   border: 1px solid #d7d8e0;
   color: #6e768f;
   font-size: 13px; }
+
+.upload__btn:hover {
+  font-weight: normal; }
+
+.upload__btn:focus {
+  border-color: #5fcac6; }
 
 .upload__btn::before {
   content: '\f0ee';
@@ -408,6 +418,15 @@ h3::before {
   line-height: 30px;
   border-collapse: separate;
   border-spacing: 2px 5px; }
+
+.upload__delete {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  outline: none; }
+
+.upload__delete:hover {
+  color: red; }
 
 /*Languages*/
 .languages__wrapper {
@@ -527,7 +546,8 @@ input[type=range] {
   -webkit-appearance: none;
   position: relative;
   margin: 20px 0 10px 50px;
-  width: 350px; }
+  width: 350px;
+  outline: non; }
 
 input[type=range]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
@@ -568,6 +588,7 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-border-radius: 20px;
   border-radius: 20px;
   position: relative;
+  outline: none;
   top: -5px;
   z-index: 2; }
 
@@ -642,6 +663,9 @@ b {
   color: inherit;
   text-decoration: underline; }
 
+.payment__singIn:hover {
+  color: #54aca9; }
+
 .payment__label {
   display: block;
   margin: 30px 0 10px 10px;
@@ -714,7 +738,8 @@ b {
   width: 180px; }
 
 .payment__card-info--3 {
-  width: 60px; }
+  width: 70px;
+  padding: 10px 10px 10px 20px; }
 
 /*submiting-wrapper*/
 .submiting-wrapper {

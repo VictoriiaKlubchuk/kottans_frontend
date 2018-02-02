@@ -8,7 +8,11 @@
 	<script src="https://use.fontawesome.com/4a582f4e95.js"></script>
 </head>
 <body>
-
+<!-- <header>
+	<input type="button" name="goBack" value="Go back" class="btn-back">
+	<a href="#">Logo</a>
+	<input type="button" name="signIn" value="Sign in">
+</header> -->
 <main>
 	<section class="header">
 		<div class="order">
@@ -47,19 +51,19 @@
 		<fieldset class="translate">
 			<h2 class="translate__title">Select what you want to translate</h2>
 			<div class="choise-wrapper">
-				<input type="radio" id="choice1" name="translate" value="website" hidden>
+				<input type="radio" id="choice1" class="visually-hidden" name="translate" value="website" >
 				<label for="choice1" class="translate__choice">
 					<img src="img/website.png" alt="Website" class="translate__img">
 					<span class="translate__text">Website</span>
 				</label>
 
-				<input type="radio" id="choice2" name="translate" value="documents" hidden checked>
+				<input type="radio" id="choice2" class="visually-hidden" name="translate" value="documents" checked>
 				<label for="choice2" class="translate__choice">
 					<img src="img/documents.png" alt="Documents" class="translate__img">
 					<span class="translate__text">Documents</span>
 				</label>
 
-				<input type="radio" id="choice3" name="translate" value="social" hidden>
+				<input type="radio" id="choice3" class="visually-hidden" name="translate" value="social">
 				<label for="choice3" class="translate__choice">
 					<img src="img/social.png" alt="Social account" class="translate__img">
 					<span class="translate__text">Social account</span>
@@ -68,8 +72,10 @@
 		</fieldset>
 		<fieldset class="upload">
 			<h3 class="upload__title" data-count="1">Upload  your documents <span>(Doc, Docx, Text,  PDF, Markdown)</span></h3>
-			<input type="file" id="file" name="upload-file" multiple hidden accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
-			<label for="file" class="upload__btn">Upload a new file</label>
+			<label for="file" class="upload__btn">
+				<input type="file" id="file" name="upload-file"  class="visually-hidden" multiple accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" value="Upload a new file" required>
+				<span>Upload a new file</span>
+			</label>
 			<table class="upload__table">
 				<tr>
 					<th>File name</th>
@@ -81,13 +87,13 @@
 					<td>business_operations.docx</td>
 					<td>78kb</td>
 					<td>842</td>
-					<td><i class="fa fa-trash" aria-hidden="true"></i></td>
+					<td><button class="upload__delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
 				</tr>
 				<tr>
 					<td>business_financial.docx</td>
 					<td>26kb</td>
 					<td>2,326</td>
-					<td><i class="fa fa-trash" aria-hidden="true"></i></td>
+					<td><button class="upload__delete"><i class="fa fa-trash" aria-hidden="true"></i></td>
 				</tr>
 			</table>
 		</fieldset>
@@ -121,11 +127,11 @@
 		<div class="tone">
 			<div class="document-tone">
 				<h3 data-count="3">Select your desired tone</h3>
-				<input type="radio" id="casualTone" name="tone" value="casualTone" hidden>
+				<input type="radio" id="casualTone" class="visually-hidden" name="tone" value="casualTone" >
 				<label for="casualTone" class="document-tone__choice document-tone__choice--1">Friendly / Casual</label>
-				<input type="radio" id="corporateTone" name="tone" value="corporateTone" hidden checked>
+				<input type="radio" id="corporateTone" class="visually-hidden" name="tone" value="corporateTone"  checked>
 				<label for="corporateTone" class="document-tone__choice document-tone__choice--2">Corporate / Pro</label>
-				<input type="radio" id="formalTone" name="tone" value="formalTone" hidden>
+				<input type="radio" id="formalTone" class="visually-hidden" name="tone" value="formalTone" >
 				<label for="formalTone" class="document-tone__choice document-tone__choice--3">Media / Formal</label>
 			</div>
 			<div class="time-limit">
@@ -160,11 +166,11 @@
 				</p>
 			</div>
 			<div class="payment__wrapper payment__wrapper--3">
-				<input type="radio" id="visaMastercard" name="payment" value="visa" hidden checked>
+				<input type="radio" id="visaMastercard" class="visually-hidden" name="payment" value="visa" checked>
 				<label for="visaMastercard" class="payment-metod payment-metod--visa"></label>
-				<input type="radio" id="payPal" name="payment" value="payPal" hidden>
+				<input type="radio" id="payPal" class="visually-hidden" name="payment" value="payPal" >
 				<label for="payPal" class="payment-metod payment-metod--payPal"></label>
-				<input type="radio" id="amazon" name="payment" value="amazon" hidden>
+				<input type="radio" id="amazon" class="visually-hidden" name="payment" value="amazon">
 				<label for="amazon" class="payment-metod payment-metod--amazon"></label>
 			</div>
 			<div class="payment__wrapper payment__wrapper--2">
@@ -178,7 +184,7 @@
 				</p>
 				<p>
 					<label for="SVVcode" class="payment__label">code</label>
-					<input type="text" class="payment__card-info payment__card-info--3" id="SVVcode" pattern="[0-9]{3}" required>
+					<input type="text"  id="SVVcode" class="payment__card-info payment__card-info--3" pattern="[0-9]{3}" required>
 				</p>
 			</div>
 		</fieldset>
