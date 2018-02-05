@@ -46,4 +46,9 @@
 
 ## Task 11
 
-Form you can see on [GitHub Pages]  (https://victoriiaklubchuk.github.io/kottans_frontend/task_11/dist/ )
+Form you can see on [GitHub Pages](https://victoriiaklubchuk.github.io/kottans_frontend/task_11/dist/ )
+
+
+## Task 12
+
+app Pizza  [Demo:](https://victoriiaklubchuk.github.io/kottans_frontend/task_12/dist/)
