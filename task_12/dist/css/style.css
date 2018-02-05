@@ -298,13 +298,19 @@ a:hover {
     margin-right: 20px;
     font-size: 10px; }
   /*MAIN*/
+  .pizza-wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 660px; }
   .button__add-pizza {
     margin: 40px; }
   /*FOOTER*/
   .logo--small {
     margin-left: 20px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   /*HEADER*/
   .header__time {
     padding-left: 80px; }
@@ -316,4 +322,8 @@ a:hover {
     font-size: 12px; }
   /*MAIN*/
   .pizzas-wrapper {
-    max-width: 960px; } }
+    max-width: 960px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; } }

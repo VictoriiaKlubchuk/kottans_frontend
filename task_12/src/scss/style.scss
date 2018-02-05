@@ -184,6 +184,11 @@ a:hover {
 	}
 
 	/*MAIN*/
+	.pizza-wrapper {
+		justify-content: center;
+		max-width: 660px;
+	}
+
 	.button__add-pizza {
 		margin: 40px;
 	}
@@ -194,7 +199,7 @@ a:hover {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
 	/*HEADER*/
 	.header__time {
 		padding-left: 80px;
@@ -213,5 +218,6 @@ a:hover {
 	/*MAIN*/
 	.pizzas-wrapper {
 		max-width: 960px;
+		justify-content: flex-start;
 	}
 }
