@@ -15,7 +15,7 @@ function getValue() {
 
 	// use api openweather.org to compile URL + some parametrs
 	var city = input.value;
-	var api = 'http://api.openweathermap.org/data/2.5/weather?q=';
+	var api = 'https://api.openweathermap.org/data/2.5/weather?q=';
 	var apiKey = '&APPID=03cfb0fcf2a70f32f32cfbb7dd39a3ec';
 	let units = '&units=metric';
 
