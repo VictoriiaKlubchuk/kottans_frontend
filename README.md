@@ -37,10 +37,20 @@
 
 * Despite of this, it showed me how internet works, what IPv4 & IPv6 are, how connections between users work, what Protocols and Ports are. All information are useful.
 
-* This course broaden my horizons at this field and gave me answers on my questions.
+* This course broaden my horizons at this field and gave me answers to my questions.
 
 > It was as hard as interesting. :thumbsup:
 
+
+## Task 3
+
+#### Intro to HTML and CSS
+
+* This course was simple.
+
+* For frontend developer is vital to know and understand DOM tree, how to manipulate and create it. Every day I use HTML and CSS for my projects.
+
+> Thank's for creating this course
 
 
 
@@ -51,4 +61,4 @@ Form you can see on [GitHub Pages](https://victoriiaklubchuk.github.io/kottans_f
 
 ## Task 12
 
-app Pizza  [Demo:](https://victoriiaklubchuk.github.io/kottans_frontend/task_12/dist/)
+app Pizza  [Demo](https://victoriiaklubchuk.github.io/kottans_frontend/task_12/dist/)
