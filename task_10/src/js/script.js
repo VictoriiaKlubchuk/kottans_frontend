@@ -94,7 +94,7 @@ function renderHTMLWeek(elem, data) {
     `
     <div class="weekday">
       <h2 class="day">${ weekday }</h2>
-      <img src="../img/${icon}.png" alt=''>
+      <img src="./img/${icon}.png" alt=''>
       <p>${ avarageTemp } C&#176;</p>
       <p> wind ${ data.data[i].wind_spd} m/s</p>
     </div>
