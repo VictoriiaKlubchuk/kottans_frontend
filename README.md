@@ -57,7 +57,8 @@
 
 #### WeatherApp
 
-It is app for getting forecast;
+It is app for getting forecast [Demo](https://victoriiaklubchuk.github.io/kottans_frontend/task_10/dist/)
+
 
 - [x] used weatherbit.io API
 - [x] forecast for today
