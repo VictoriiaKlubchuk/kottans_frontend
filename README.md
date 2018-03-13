@@ -53,6 +53,21 @@
 > Thank's for creating this course
 
 
+## Task 10
+
+#### WeatherApp
+
+It is app for getting forecast;
+
+[x] used weatherbit.io API
+[x] forecast for today
+[x] forecast for 7 days
+[ ] usage components and classes ES6
+[ ] favourite city
+[ ] History API
+[ ] [weather font svg](http://erikflowers.github.io/weather-icons/)
+
+
 
 ## Task 11
 
