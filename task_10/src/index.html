@@ -5,15 +5,19 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-  <input type="text" name="" value="London" id="userCity">
-  <button id="submit">submit</button>
-  
-
-  <div id="weather">
-
+  <form>
+    <input type="text" name="" value="London" id="userCity" class="search">
+    <button id="submit" class="btn">Search</button>
+    <!-- <button id="favorite" class="btn">Fav</button> -->
+  </form>
+  <div class="wrapper ">
+    <div id="today" class="weather-box--today">
+    </div>
+    <div id="week" class="weather-box--week">
+    </div>
   </div>
-
+  <!-- <div id="root"></div> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
