@@ -67,7 +67,7 @@ function renderHTMLToday(elem, data) {
       <h1 class="title">${ data.city_name }</h1>
       <h2 class="day">${ weekday }</h2> 
       <p><time>${ data.data[0].datetime }</time></p>
-      <img src="../img/${icon}.png" alt="">
+      <img src="./img/${icon}.png" alt="">
       <p> ${ avarageTemp } C&#176;</p>
       <i class="wi wi-day-snow"></i>
       <p> wind speed: ${ data.data[0].wind_spd} m/s</p>
