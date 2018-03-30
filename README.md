@@ -53,6 +53,17 @@
 > Thank's for creating this course
 
 
+## Task 6
+
+#### Object Oriented JS
+
+* It is interesting course about Object Oriented JS. I learnt syntaxes of Constructors in JS and how to rewrite simple code to code using prototypal pattern. For me was new subclasses, pseudo-classes, super-classes and delegations. It was i bit difficult.
+
+* there are a lot of new information for me, this is really usefull course.
+
+>  Thank's for this course!
+
+
 ## Task 10
 
 #### WeatherApp
@@ -67,7 +78,6 @@ It is app for getting forecast [Demo](https://victoriiaklubchuk.github.io/kottan
 - [ ] favourite city
 - [ ] History API
 - [ ] [weather font svg](http://erikflowers.github.io/weather-icons/)
-
 
 
 ## Task 11
