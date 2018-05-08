@@ -41,6 +41,18 @@
 
 > It was as hard as interesting. :thumbsup:
 
+## Task 2
+
+#### What is Version Control?
+
+* This course refresh knowlage how to create repos from command line, review changes, develop branches, merge branches and resolve conflicts and revert and reset commits
+
+* useful command or flags: 
+	`git revert`, `git reset`, `--amend`(update most resent commit), `-p`, `--oneline`, `--graph`
+
+* all info are useful and I use it. 
+
+> Interesting course :thumbsup: Thank's 
 
 ## Task 3
 
