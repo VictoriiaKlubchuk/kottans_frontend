@@ -94,6 +94,8 @@ It is app for getting forecast [Demo](https://victoriiaklubchuk.github.io/kottan
 
 ## Task 11
 
+It is a big form with 5 sections, includes field for upload files, selects, input type range and others.
+
 Form you can see on [GitHub Pages](https://victoriiaklubchuk.github.io/kottans_frontend/task_11/dist/ )
 
 
